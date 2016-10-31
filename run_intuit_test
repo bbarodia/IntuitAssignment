@@ -1,0 +1,2 @@
+#! /bin/bash
+mvn clean install && mvn package && java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006 -jar target/intuit_test-0.1.0.jar
